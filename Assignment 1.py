@@ -2,8 +2,9 @@
 
 for row in range (7):
     for col in range (17):
-        if ((col==0) or ((row==0 or row==3) and (col>0 and col<4)) or ((col==4) and (row!=0 and row!=3))):
-        
+        if ((col==0) or ((row==0 or row==3) and (col>0 and col<4)) or ((col==4) and (row!=0 and row!=3)) or \
+            ((row==0 or row==3) and (col>6 and col<10)) or ((col==6 or col==10) and (row!=0))):
+            
             print("*", end=" ")
             
         else:
